@@ -26,7 +26,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
+      padding-top: 15%;  }
   
 .masodikszovegeskep{
   animation: fadeIn 3s linear;
@@ -82,9 +82,14 @@ p{
 }
 .kep{
   height: auto;
-  width: 30vw;
+  width: 50vw;
   display: flex;
   margin-left: 25%;
+}
+.oszlopok{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 25 50px;
 }
 .container {
 
