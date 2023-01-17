@@ -26,7 +26,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 15%;  }
+      padding-top: 5%;  }
   
 .masodikszovegeskep{
   animation: fadeIn 3s linear;
@@ -81,16 +81,17 @@ p{
   list-style-type: none;
 }
 .kep{
-  height: auto;
-  width: 50vw;
-  display: flex;
-  margin-left: 25%;
+  position:fixed;
+  bottom:0px;
+  width: 120%;
+  height: 30vw;
+  object-fit: fill;
+  opacity: 0;
+  animation: fuanimacio 5s linear;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
 }
-.oszlopok{
-  display: grid;
-  grid-template-columns: 40% 60%;
-  padding: 25 50px;
-}
+
 .container {
 
   display: flex;
@@ -119,7 +120,7 @@ p{
 }
 li{
   border: white solid 2px;
-  font-size: 18px;
+  font-size: 20px;
 }
 a{
   text-decoration: none;
@@ -148,3 +149,8 @@ a:hover{
     100%  {opacity: 1;
 }
   }
+
+@keyframes fuanimacio{
+  100% {opacity: 1;
+  }
+}
